@@ -1,0 +1,103 @@
+@media screen and (max-width: 900px){
+    /* ajustes de las imagenes de proyectos*/
+
+    .content_list{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ajustes de iconos de skills*/
+
+    .list_icon{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    .icon, .fondo_icon{
+        width: 50px;
+        margin: 10px 0 10px 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+
+    /*  Menu desplegable */
+    .content_nav{
+        margin: 0px 30px;
+    }
+    .content_nav > label > img{
+        display: block;
+        width:30px;
+        padding: 20px 20px 30px 20px; 
+       
+
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    .nav_menu{
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        top:100px;
+        left: -100%;
+        margin: 0;
+        transition: all .5s;
+    }
+
+    .item_nav, .activo{
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .logo{
+        padding: 5px;
+        margin-right: 30px;
+    }
+
+    #check:checked ~ .nav_menu{
+        left: 0px;
+        position: absolute;
+    }
+    /* ajustes de las imagenes de proyectos*/
+
+    .content_list{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .list_icon{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 576px) {
+    /* ajustes de las imagenes de proyectos*/
+
+    .content_list{
+        grid-template-columns: repeat(1, 1fr);
+
+    } 
+    /* ajustes de iconos de skills*/
+
+    .list_icon{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+    .icon, .fondo_icon{
+        width: 50px;
+        margin: 10px 0 10px 30px;
+    }
+    /*  ajustes de titulos */
+    .titles_contact{
+        margin-top:20vh ;
+    }
+
+    /* ajustes del formulario*/
+    form{
+        width: 80%;
+        margin: 0 5% 15px 5%;
+    }
+}
