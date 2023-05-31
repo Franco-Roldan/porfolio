@@ -150,17 +150,50 @@ h3{
     padding-right: 10px;
     position: relative;
     float: left;
+    margin-bottom: 10px;
 }
-
+.link_proyect{
+    text-decoration: none;
+    background-color: #333;
+    border: none;
+}
 .img_proyect{
-
-    margin-bottom: 22px;
     max-width: 100%;
-    border-radius: 3px;
+    border-radius: 5px 5px 0 0;
     width: auto;
     height: auto;
     
 }
+.content_item_descript{
+    background-color: #333;
+    padding: 10px 0;
+    border-radius:0 0  5px 5px;
+
+}
+.content_item_descript > h1{
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: start;
+    margin-left: 10px;
+}
+.content_item_descript > span {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px ;
+}
+
+.content_item_descript > span > p{
+    margin: 0;
+    margin-right: 10px;
+    background-color: #444;
+    padding: 2px 6px;
+    color: #00d6b4;
+    font-size: small;
+}
+
 .img_proyect:hover{
     opacity: 0.7;
     transition: all .3s;
