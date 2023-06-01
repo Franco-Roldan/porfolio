@@ -8,6 +8,14 @@ body{
     background-color: #222;
     color: white;
 }
+body::-webkit-scrollbar{
+    background-color: #222;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #444;
+    border-radius: 8px;
+}
 /* estilos generales de la seccion Hero  --- HOME ---*/
 .Hero{
     
@@ -219,7 +227,7 @@ h3{
     border-radius: 100%;
 }
 .content_p{
-    width: 70%;
+    width: 60%;
     margin: 40px auto 10px auto;
 
 }
@@ -230,7 +238,7 @@ h3{
     
 }
 .content_icon{
-    width: 70%;
+    width: 60%;
     margin: 0 auto 0 auto;
 }
 .list_icon{
@@ -345,6 +353,30 @@ form{
     margin: 0;
     color: white;
 }
+
+/*  Estilos de No disponible*/
+
+.content_not_project{
+    background-color: #222;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content_not_project > img {
+    width: 300px;
+    height: 300px;
+
+}
+.content_not_project > p{
+    font-weight: 800;
+    font-size: 20px;
+    color: #4b4b4b;
+    width: 300px;
+}
+
 
 /*  Estilos del footer --- HOME --- */
 footer{

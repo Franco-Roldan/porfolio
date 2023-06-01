@@ -82,6 +82,10 @@
     } 
     /* ajustes de iconos de skills*/
 
+    .content_p{
+        width: 80%;
+    }
+
     .list_icon{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
