@@ -12,15 +12,16 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
         btn.value = 'SEND EMAIL';
-        const message = document.querySelector('.content_message_env');
-        message.setAttribute('style', 'display: block');
+        const message_info = document.querySelector('.content_message_env');
+        message_info.setAttribute('style', 'display: block');
         
     }, (err) => {
       btn.value = 'SEND EMAIL';
-      const message = document.querySelector('.content_message_error');
-      message.setAttribute('style', 'display: block');
+      const message_info = document.querySelector('.content_message_error');
+      message_info.setAttribute('style', 'display: block');
       
     });
     const reset_form = document.getElementById('form');
     reset_form.reset();
+
 });
